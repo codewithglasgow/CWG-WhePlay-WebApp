@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CWG WhePlay Web App</title>
+    <title>CWG WhePlay WebApp</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- ALL FAVICONS FOR MOBILE HOME SCREEN -->
+    <link rel="icon" href="https://drive.google.com/uc?id=1vFP8OL3NIHsQBxSlS5ItXOOZEFoeiZhQ" type="image/png" sizes="192x192">
+    <link rel="icon" href="https://drive.google.com/uc?id=1vFP8OL3NIHsQBxSlS5ItXOOZEFoeiZhQ" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1vFP8OL3NIHsQBxSlS5ItXOOZEFoeiZhQ">
+    
+    <!-- PWA/MOBILE HOME SCREEN META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CWG WhePlay WebApp">
     <meta name="theme-color" content="#000000">
-
-    <link rel="icon" href="https://drive.google.com/uc?id=1vFP8OL3NIHsQBxSlS5ItXOOZEFoeiZhQ" type="image/png">
-    <link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1vFP8OL3NIHsQBxSlS5ItXOOZEFoeiZhQ">
-
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X297NH532"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
@@ -25,70 +28,17 @@
       <title>CWG WhePlay WebApp</title>
     
     <style>
-        /* Base Reset */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body, html { 
-            width: 100%; 
-            height: 100%; 
-            overflow: hidden; 
-            background-color: #000; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        /* Desktop View: Floating Mockup */
-        .app-container {
-            position: relative;
-            width: 420px; 
-            height: 85vh;
-            margin: 5vh auto;
-            border-radius: 30px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-            border: 8px solid #222;
-            background: #000;
-            transition: all 0.3s ease-in-out;
-        }
-
+        body { margin: 0; padding: 0; width: 100%; height: 100vh; overflow: hidden; }
         iframe { 
             width: 100%; 
-            height: 100%; 
+            height: 100vh; 
             border: none; 
             display: block; 
-        }
-
-        /* MOBILE FIX: Landscape & Portrait */
-        /* Targets actual mobile devices by checking for hover capability (touchscreens usually don't have it) */
-        @media (max-width: 1024px) {
-            .app-container {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%; /* Fallback */
-                height: 100dvh; /* Dynamic height to account for browser bars */
-                margin: 0;
-                border: none;
-                border-radius: 0;
-            }
-        }
-
-        /* Ensure landscape on small screens is truly full screen */
-        @media (max-height: 500px) and (orientation: landscape) {
-            .app-container {
-                height: 100dvh;
-                width: 100vw;
-            }
         }
     </style>
 </head>
 <body>
-
-    <div class="app-container">
-        <iframe src="https://codewithglasgow.github.io/WhePlay_v5.0/" 
-                allow="autoplay; fullscreen; keyboard"
-                allowfullscreen></iframe>
-    </div>
-
+    <iframe src="https://codewithstephglas96.github.io/wheplayv5.0/"
+            allowfullscreen></iframe>
 </body>
 </html>
